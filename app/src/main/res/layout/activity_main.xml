@@ -11,16 +11,50 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="49dp"
         android:paddingBottom="20dp"
-        android:layout_centerInParent="true"/>
+        android:text="Username" />
 
     <TextView
         android:id="@+id/desc"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/title"
+        android:layout_alignLeft="@+id/title"
+        android:layout_alignStart="@+id/title"
+        android:layout_below="@+id/uname"
+        android:layout_marginTop="28dp"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/uname"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/title"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_toEndOf="@+id/title"
+        android:layout_toRightOf="@+id/title" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/uname"
+        android:layout_alignStart="@+id/uname"
+        android:layout_alignTop="@+id/desc" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pass"
         android:layout_centerHorizontal="true"
-        android:text="Description"/>
+        android:layout_marginTop="52dp"
+        android:text="ADD" />
 
 </RelativeLayout>
